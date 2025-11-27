@@ -1,1 +1,1 @@
-
+Website ‘SIAP’ dikembangkan sebagai upaya memfasilitasi pusat informasi perkuliahan terfokus pada jurusan Teknik Informatika  dengan pelaporan berupa KRS dan KHS mahasiswa agar pengaksesan sistem informasi akademik dapat dengan mudah dilakukan tanpa adanya kendala pengaksesan web yang berlebih. Begitupun juga oleh dosen pengampu mata kuliah yang dapat dengan mudah memasukkan nilai dan data absensi mahasiswa pada sistem informasi akademik jurusan.
