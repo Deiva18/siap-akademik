@@ -1,0 +1,126 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url("bg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+  min-height: 100vh;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;   /* horizontal center */
+    align-items: center;       /* vertical center */
+    min-height: 100vh;         /* full screen */
+    text-align: center;        /* semua teks rata tengah */
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+  flex-direction: column;
+  gap: 20px
+}
+
+.nav .logo h2 {
+  font-weight: 600;
+  font-family: sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-size: 50px;
+  text-shadow: 
+      0 0 5px #1E90FF,
+      0 0 10px #1E90FF,
+      0 0 20px #1E90FF,
+      0 0 40px #1E90FF;
+  animation: neonPulse 2s infinite alternate;
+}
+
+/* Keyframes animasi glow */
+@keyframes neonPulse {
+  from {
+    text-shadow: 
+        0 0 5px #1E90FF,
+        0 0 10px #1E90FF,
+        0 0 20px #1E90FF,
+        0 0 40px #1E90FF;
+    color: #FFFFFF;
+  }
+  to {
+    text-shadow: 
+        0 0 10px #00BFFF,
+        0 0 20px #00BFFF,
+        0 0 40px #00BFFF,
+        0 0 80px #00BFFF;
+    color: #E0FFFF; /* sedikit kebiruan saat glow */
+  }
+}
+
+.nav .logo i {
+  color: #FFD700;
+  margin: 0;
+  font-size: 18 px;
+  font-style: italic;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav ul li {
+  margin-right: 30px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #060504;
+  font-weight: 500;
+  font-family: sans-serif;
+  font-size: 17px;
+}
+
+.nav ul .active::after {
+  content: "";
+  width: 50%;
+  height: 3px;
+  background-color: aliceblue;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+input {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.Admin,
+.Dosen,
+.Mahasiswa {
+  background-color: blanchedalmond;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+.Admin:hover,
+.Dosen:hover,
+.Mahasiswa:hover {
+  background-color: beige;
+}
